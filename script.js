@@ -7,4 +7,7 @@ const student = {
   student.displayInfo = function () {
     return `Student Name: ${this.name}, Age: ${this.age}, Enrolled: ${this.enrolled}`;
   };
-    
+  console.log("Name:", student.name);
+  console.log("Age:", student.age);
+  console.log("Display Info:", student.displayInfo());
+      
