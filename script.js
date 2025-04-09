@@ -29,5 +29,16 @@ const student = {
   const newCourses = ["Cloud Computing", "Machine Learning"];
 const allCourses = [...student.courses, ...newCourses];
 console.log("Merged Courses Array:", allCourses);
-
+student.addCourse = function (course) {
+    this.courses.push(course);
+  };
+  
+  student.totalCourses = function () {
+    return this.courses.length;
+  };
+  
+  student.addCourse("Node.js");
+  console.log("Courses after adding new course:", student.courses);
+  console.log("Total Number of Courses:", student.totalCourses());
+  
             
