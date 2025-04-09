@@ -4,4 +4,7 @@ const student = {
     enrolled: true,
     courses: ["JavaScript", "Web Development", "Databases"]
   };
-  
+  student.displayInfo = function () {
+    return `Student Name: ${this.name}, Age: ${this.age}, Enrolled: ${this.enrolled}`;
+  };
+    
