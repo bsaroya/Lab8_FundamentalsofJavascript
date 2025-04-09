@@ -40,5 +40,7 @@ student.addCourse = function (course) {
   student.addCourse("Node.js");
   console.log("Courses after adding new course:", student.courses);
   console.log("Total Number of Courses:", student.totalCourses());
-  
+  const averageScore = scores.reduce((sum, score) => sum + score, 0) / scores.length;
+  console.log("Average Score:", averageScore.toFixed(2));
+    
             
